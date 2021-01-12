@@ -19,18 +19,30 @@ public class ChuyenKieuDuLieu {
         System.out.println("Bat dau chuong trinh");
         String x = "2";
 //        int y = Integer.parseInt(x); // dòng này để ngoài khối try catch, nếu trường hợp xảy ra lỗi thì chương trình sẽ die.
+//
+//        try{
+//            int y = Integer.parseInt(x);
+//            System.out.println("So nguyen chuyen duoc " + y);
+//        }catch (Exception exception){
+//            exception.printStackTrace(); // hiển thị toàn bộ logic lỗi
+//            System.out.println("Loi chuyen kieu du lieu: " + exception.getMessage()); // chỉ hiển thị câu thông báo
+//        }
+//
+//
+//
+//        System.out.println("ket thuc chuong trinh");
+//
+//        //=================== bao gói kiểu dữ liệu
+//
+//        int a = 5;
+//        Integer b = 5;
 
-        try{
-            int y = Integer.parseInt(x);
-            System.out.println("So nguyen chuyen duoc " + y);
-        }catch (Exception exception){
-            exception.printStackTrace(); // hiển thị toàn bộ logic lỗi
-            System.out.println("Loi chuyen kieu du lieu: " + exception.getMessage()); // chỉ hiển thị câu thông báo
-        }
+        //------- gọi lớp toán tử
+        ToanTu toanTu = new ToanTu();
+        toanTu.SoDuong();
+        System.out.println("Kết thúc chương trình");
 
 
-
-        System.out.println("ket thuc chuong trinh");
     }
 
 }
