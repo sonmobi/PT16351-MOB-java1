@@ -8,11 +8,20 @@ public class ToanTu {
         String ketqua ;
         System.out.print("Nhap vao 1 so nguyen x = ");
         Scanner scanner = new Scanner(System.in);
-        x = scanner.nextInt(); // đọc số nguyên vào biến
-        ketqua = x >0 ?"X là số dương": "X là không dương";
-        System.out.println("Kết quả: " + ketqua);
+//        x = scanner.nextInt(); // đọc số nguyên vào biến
+//        ketqua = x >0 ?"X là số dương": "X là không dương";
+//        System.out.println("Kết quả: " + ketqua);
 
-        
+        try{
+            x = scanner.nextInt(); // đọc số nguyên vào biến
+            ketqua = x >0 ?"X là số dương": "X là không dương";
+            System.out.println("Kết quả: " + ketqua);
+
+        }catch (Exception exception){
+
+            System.out.println("Ban can phai nhap so nguyen");
+        }
+
 
     }       // nhiệm vụ: Sau khi chạy, cải tiến thêm truy catch để tránh lỗi die chương trình.
 }
