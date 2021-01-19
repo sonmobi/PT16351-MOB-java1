@@ -48,7 +48,8 @@ public class Main {
          */
         //====================================================================
         //======= Sử dụng ArrayList để lưu danh sách ==========================
-        ArrayList<String> dssp = new ArrayList<String>();
+
+        /*ArrayList<String> dssp = new ArrayList<String>();
         dssp.add("Điện thoại");
         dssp.add("Máy tính");
         dssp.add("Tivi");
@@ -59,6 +60,34 @@ public class Main {
         System.out.println("Số lượng trước khi xóa: " +    dssp.size() );
         dssp.clear(); // xóa hết phần tử
         System.out.println("Số lượng còn lại sau khi xóa: " +    dssp.size() );
+        */
+
+        //----------- Đối 1 tượng SinhVien
+        SinhVien sv = new SinhVien();
+        sv.Nhap();
+        sv.Xuat();
+
+        /*
+        //==== cách tạo mảng lưu danh sách sinh viên
+        SinhVien[]  dssv = new SinhVien[5];
+        // nhập danh sách sinh viên
+        for(int i = 0; i<dssv.length; i++){
+            dssv[i].Nhap();
+        }
+
+        // in danh sách sinh viên
+        for(int i = 0; i<dssv.length; i++){
+            System.out.println("======== Sinh viên thứ " + i + "======");
+            dssv[i].Xuat();
+        }
+
+        // hoặc dùng cách foreach để in SV
+        System.out.println("======== DSSV theo cách foreach ");
+        for(SinhVien sinhVien : dssv){
+            sinhVien.Xuat();
+        }
+
+         */
 
     }
 }
