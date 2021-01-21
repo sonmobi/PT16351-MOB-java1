@@ -18,10 +18,8 @@ public class Main {
         // hàm khởi tạo sinh viên
         SinhVien sv1 = new SinhVien();
         sv1.InThongTin();
-
         SinhVien sv2 = new SinhVien("Nguyễn Văn A");
         sv2.InThongTin();
-
         SinhVien sv3 = new SinhVien("SV01", "Trần Văn C");
         sv3.InThongTin();
 

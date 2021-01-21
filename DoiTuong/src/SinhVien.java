@@ -9,6 +9,7 @@ public class SinhVien {
         System.out.println("Gọi hàm khởi tạo SinhVien()");
     }
     public SinhVien(String hoTen){
+        this.hoTen = hoTen;
         System.out.println("Gọi hàm khởi tạo SinhVien() có tham số hoTen");
     }
     public SinhVien(String maSV, String hoTen){
