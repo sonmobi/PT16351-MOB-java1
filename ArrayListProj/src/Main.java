@@ -28,11 +28,17 @@ public class Main {
             System.out.print("Nhập phần tử thứ " + i);
             dsMoi.add(   scanner.nextLine()  );
         }
+        dsMoi.remove(3);// xóa phần tử thứ 4 ở vị trí index là 3
         // in danh sách mới:
         System.out.println("Các phần tử đã nhập trong ds mới");
         for(String x : dsMoi){
             System.out.println(x);
         }
-
+        // kiểm tra phần tử có tồn tại trong danh sách hay không
+        if(dsMoi.contains("Nam định")){
+            System.out.println("Có tồn tại Nam định");
+        }else{
+            System.out.println("Không tồn tại Nam định");
+        }
     }
 }
