@@ -13,12 +13,21 @@ public class Main {
         System.out.println("5.Tìm và sửa sinh viên theo họ tên");
         System.out.println("6.Tìm và xóa theo họ tên");
         System.out.println("7.Kết thúc");
+        System.out.print("Mời bạn chọn 1 chức năng: ");
         int chon ;
         Scanner scanner = new Scanner(System.in);
         chon = Integer.parseInt( scanner.nextLine() );
         switch (chon){
             case 1:
-                System.out.println("Bạn đã chọn 1");
+                System.out.print("Bạn đã chọn 1, nhập số lượng SV:  ");
+                int soLuongSV = Integer.parseInt( scanner.nextLine() );
+                for(int i = 0; i< soLuongSV; i++){
+                    System.out.println("Nhập SV " + i);
+                    SVPoly sv = new SVPoly();
+                    sv.Nhap();
+                    dssv.add(sv);
+                }
+
                 break;
             case 2:
                 break;
