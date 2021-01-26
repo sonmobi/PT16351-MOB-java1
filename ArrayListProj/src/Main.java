@@ -40,5 +40,8 @@ public class Main {
         }else{
             System.out.println("Không tồn tại Nam định");
         }
+        dsMoi.clear(); // xóa toàn bộ ds
+        System.out.println("Số lượng phần tử còn lại: " + dsMoi.size());
+
     }
 }
