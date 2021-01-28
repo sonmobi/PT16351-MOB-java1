@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
@@ -26,12 +28,32 @@ public class Main {
                     SVPoly sv = new SVPoly();
                     sv.Nhap();
                     dssv.add(sv);
+                 }
+                //======= In danh sách sv theo điểm tăng dần
+                //1. sắp xếp
+                Comparator<SVPoly> comparator = new Comparator<SVPoly>() {
+                    @Override
+                    public int compare(SVPoly o1, SVPoly o2) {
+
+                        return o1.diemTB.compareTo(o2.diemTB);
+                    }
+                } ;
+
+                Collections.sort(dssv,comparator);
+                //2. in
+                System.out.println("DANH SÁCH SV SAU KHI SẮP XẾP");
+                for(SVPoly sv : dssv){
+                    System.out.println("Ho va ten: " + sv.hoTen + ", Diem: " + sv.diemTB);
                 }
 
                 break;
             case 2:
+
                 break;
             case 3:
+                // xuất danh sách SV theo
+
+
                 break;
             case 4:
                 break;
