@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Main {
     static ArrayList<SVPoly> dssv;
     public static void main(String[] args) {
+        int bt = 222;
+        
         dssv = new ArrayList<SVPoly>();
         System.out.println("CHƯƠNG TRÌNH QLSV");
         System.out.println("1.Nhập danh sách sinh viên");
