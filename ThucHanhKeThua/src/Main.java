@@ -7,5 +7,12 @@ public class Main {
         tp.xuatThongTin();
         tp.PrintTrachNhiem();
 
+        //=======================
+
+
+
+
+
+
     }
 }

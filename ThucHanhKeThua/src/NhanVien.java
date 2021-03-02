@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
 public class NhanVien {
-    String maNV;
-    String hoTen;
+    private String maNV; // riêng tư: chỉ lớp NhanVien mới dược sử dụng
+    protected String hoTen;  // thuộc tính di truyền: Chỉ các lớp con mới được sử dụng.
     double luong;
     public  void nhapThongTin(){
+        // phạm vi truy cập riêng tư: this.......
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập mã NV: ");
         this.maNV = scanner.nextLine();
@@ -17,7 +19,9 @@ public class NhanVien {
         System.out.println("Thông tin nhân viên");
         System.out.println("Mã: " + this.maNV);
         System.out.println("Họ tên: " + this.hoTen);
-        System.out.println("Lương: " + this.luong);
+        System.out.printf("Lương: " + String.format("%,.0f",this.luong)   );
+
+        ;
     }
     public double getThuNhap(){
         double thuNhap = 0;
