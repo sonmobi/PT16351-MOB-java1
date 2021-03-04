@@ -7,7 +7,7 @@ public class TruongPhong extends NhanVien {
     }
 
     public void PrintTrachNhiem(){
-        this.
+
         System.out.println("Trach nhiem: " + this.trachNhiem);
     }
 
